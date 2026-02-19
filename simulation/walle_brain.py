@@ -4,7 +4,7 @@ from google import genai
 from google.genai import types
 
 # ==========================================
-# 恢复代理配置 (确保 7897 是你代理软件的真实端口)
+# 代理配置
 # ==========================================
 os.environ['HTTP_PROXY'] = 'http://127.0.0.1:****'
 os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:****'
@@ -55,3 +55,4 @@ if __name__ == "__main__":
     print("系统启动：正在连接 Gemini 多模态大脑...")
 
     chat_with_walle("你好，瓦利！我是你的开发者。")
+
