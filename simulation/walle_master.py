@@ -12,7 +12,7 @@ from simulation.walle_kinematics import WalleKinematics
 # ==========================================
 # 1. 大脑配置 (直连模式，无代理)
 # ==========================================
-API_KEY = "AIzaSyCR6E1QEthuGzgLID8MX9U2hy0QsBpcM90"
+API_KEY = "AIza***************************"
 client = genai.Client(api_key=API_KEY)
 
 system_instruction = """
@@ -106,4 +106,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
