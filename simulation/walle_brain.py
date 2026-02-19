@@ -6,13 +6,13 @@ from google.genai import types
 # ==========================================
 # 恢复代理配置 (确保 7897 是你代理软件的真实端口)
 # ==========================================
-os.environ['HTTP_PROXY'] = 'http://127.0.0.1:7897'
-os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:7897'
+os.environ['HTTP_PROXY'] = 'http://127.0.0.1:****'
+os.environ['HTTPS_PROXY'] = 'http://127.0.0.1:****'
 
 # ==========================================
 # 填入你新申请的 API Key
 # ==========================================
-API_KEY = "AIzaSyCR6E1QEthuGzgLID8MX9U2hy0QsBpcM90"
+API_KEY = "AIza****************************"
 
 # 初始化客户端
 client = genai.Client(api_key=API_KEY)
@@ -53,4 +53,5 @@ def chat_with_walle(user_input):
 
 if __name__ == "__main__":
     print("系统启动：正在连接 Gemini 多模态大脑...")
+
     chat_with_walle("你好，瓦利！我是你的开发者。")
